@@ -1,4 +1,4 @@
-var colors = 1;
+var colors = 0;
 var fontSize = 20;
 var size = 20;
 var party = 0;
