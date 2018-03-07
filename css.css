@@ -31,7 +31,7 @@ h1 h2 h3 h4 {
 	line-height: 1;
 }
 
-@media (min-width: 500){
+@media (min-width: 750){
 	body {
 		margin: auto auto;
 		max-width: auto;
