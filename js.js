@@ -66,7 +66,9 @@ function partyMode(){
 
 	elem.style.backgroundColor = "#FF6EF3";
 
-	elem.style.fontFamily = "'Comic Sans MS', 'Marker Felt', sans-serif";
+	elem.style.fontFamily = "'Comic Sans MS', 'ComicNeueBoldOblique'"; //, 'Marker Felt'
+	elem.style.fontWeight: normal;
+	elem.style.fontStyle: normal; 
 	elem.style.fontStyle = "italic";
 	elem.style.textShadow = "-4px 4px #00FFE4"
 
