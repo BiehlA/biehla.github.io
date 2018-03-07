@@ -35,6 +35,30 @@ function toggleColors(){
 	}
 }
 
+function smallerText(){
+	fontSize--;
+
+	var elem = document.getElementById("body");
+
+	elem.style.fontSize = String(fontSize + "px");
+}
+
+function largerText(){
+	fontSize++;
+
+	var elem = document.getElementById("body");
+
+	elem.style.fontSize = String(fontSize + "px");
+}
+
+function resetText(){
+	fontSize = size;
+
+	var elem = document.getElementById("body");
+
+	elem.style.fontSize = String(fontSize + "px");
+}
+
 function partyMode(){
 	var elem = document.getElementById("body");
 
@@ -42,7 +66,7 @@ function partyMode(){
 
 	elem.style.backgroundColor = "#FF6EF3";
 
-	elem.style.fontFamily = "Comic Sans MS";
+	elem.style.fontFamily = "'Comic Sans MS', 'Marker Felt', sans-serif";
 	elem.style.fontStyle = "italic";
 	elem.style.textShadow = "-4px 4px #00FFE4"
 
@@ -101,30 +125,6 @@ function thePartyNeverStops(){
 	}
 }
 
-function smallerText(){
-	fontSize--;
-
-	var elem = document.getElementById("body");
-
-	elem.style.fontSize = String(fontSize + "px");
-}
-
-function largerText(){
-	fontSize++;
-
-	var elem = document.getElementById("body");
-
-	elem.style.fontSize = String(fontSize + "px");
-}
-
-function resetText(){
-	fontSize = size;
-
-	var elem = document.getElementById("body");
-
-	elem.style.fontSize = String(fontSize + "px");
-}
-
 function killParty(){
 	clearInterval(interval);	
 	var name = document.getElementById("name");
@@ -142,6 +142,8 @@ function killParty(){
 
 	colors = 0;
 	toggleColors();
+
+	on = 1;
 
 	name.innerHTML = "Anand Biehl";
 	names.innerHTML = "Anand Biehl";
