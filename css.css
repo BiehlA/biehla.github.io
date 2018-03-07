@@ -13,6 +13,7 @@ button {
 	box-shadow: 0;
 	border: 0;
 	border-radius: .25em;
+	opacity: .85;
 }
 
 .kill {
