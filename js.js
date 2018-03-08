@@ -1,3 +1,7 @@
+/*
+Anand Biehl (c 2018)
+*/
+
 var colors = 0;
 var fontSize = 20;
 var size = 20;
@@ -64,13 +68,17 @@ function partyMode(){
 
 	elem.style.color = "#24FF00";
 
+	if (party == 0){
+		document.getElementsByClassName("bloop")[0].style.opacity = .85;
+	}
+
 	elem.style.backgroundColor = "#FF6EF3";
 
-	elem.style.fontFamily = "'Comic Sans MS', 'ComicNeueBoldOblique'"; //, 'Marker Felt'
-	elem.style.fontWeight: normal;
-	elem.style.fontStyle: normal; 
+	elem.style.fontFamily = "'Comic Sans MS', 'Comic Neue', sans-serif";
+	elem.style.fontWeight= 700;
+	elem.style.fontStyle= "oblique"; 
 	elem.style.fontStyle = "italic";
-	elem.style.textShadow = "-4px 4px #00FFE4"
+	elem.style.textShadow = "-4px 4px #00FFE4";
 
 	size = 40;
 	resetText();
@@ -81,26 +89,28 @@ function partyMode(){
 function undoPartyMode(){
 	if (party == 1){
 		var elem = document.getElementById("body");
+		document.getElementsByClassName("bloop")[0].style.opacity = 0;
+
 		elem.style.fontFamily = "";
 		elem.style.fontStyle = "";
-		elem.style.textShadow = ""
+		elem.style.textShadow = "";
 
 		size = 20;
 		resetText();
 
-		colors = 0;
+		colors = !colors;
 		toggleColors();
 
 		if (on == 1){
 			on = 0;
-			interval = setInterval(replay, 500);
+			interval = setInterval(replay, 1000);
 		}
 	}
 }
 
 function replay(){
 	clearInterval(interval);
-	interval = setInterval(thePartyNeverStops, 500);
+	interval = setInterval(thePartyNeverStops, 300);
 }
 
 function thePartyNeverStops(){
@@ -108,7 +118,7 @@ function thePartyNeverStops(){
 	var names = document.getElementById("names");
 	var elem = document.getElementById("body");
 	var button = document.getElementsByTagName("button");
-	document.getElementsByClassName("kill")[0].style.opacity = 100;
+	document.getElementsByClassName("kill")[0].style.opacity = .85;
 
 	partyMode();
 	size = 40;
@@ -137,12 +147,12 @@ function killParty(){
 
 	elem.style.fontFamily = "";
 	elem.style.fontStyle = "";
-	elem.style.textShadow = ""
+	elem.style.textShadow = "";
 
-	fontSize = 21;
-	smallerText();
+	size = 20;
+	resetText();
 
-	colors = 0;
+	colors = !colors;
 	toggleColors();
 
 	on = 1;

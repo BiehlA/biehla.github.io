@@ -1,0 +1,11 @@
+
+@font-face {
+  font-family: 'Comic Neue';
+  src: url('ComicNeue-Bold-Oblique.eot');
+  src: url('ComicNeue-Bold-Oblique.eot?#iefix') format('embedded-opentype'),
+       url('ComicNeue-Bold-Oblique.woff2') format('woff2'),
+       url('ComicNeue-Bold-Oblique.woff') format('woff'),
+       url('ComicNeue-Bold-Oblique.ttf')  format('truetype');
+  font-weight: 700;
+  font-style: oblique;
+}

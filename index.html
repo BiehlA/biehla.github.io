@@ -1,22 +1,28 @@
+<!--
+Hey there! Interested in my site, eh? It's fairly simple, the only _slightly_ complicated part is the party mode. Have fun looking at the code!
+
+P.S. curious to why I didn't use bootstrap or something like that? I just wanted to keep everything pretty simple, and didn't really feel like importing any non-standard js/css.
+
+Anand Biehl (c 2018)
+-->
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title id="name">Anand Biehl</title>
-
 	<link rel="stylesheet" type="text/css" href="css.css">
 
-	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/comic-neue" type="text/css"/>
-
-	<!-- <style>body{color:#F8F8F8;background-color:#343434}button{color:#343434;background-color:#F8F8F8}</style> -->
+	<title id="name">Anand Biehl</title>
 </head>
 
 <body id="body">
 	<button onclick="toggleColors()" id="colors">Night Mode?</button>
+	<button onclick="partyMode()" id="colors">Party Mode</button> 
 	<br>
 	<button onclick="smallerText()" id="colors">-</button>
 	<button onclick="resetText()" id="colors">aA</button>
 	<button onclick="largerText()" id="colors">+</button>
+	<button onclick="undoPartyMode()" id="colors" class="bloop">undo party mode</button> 
+
 
 	<h1 id="names">Anand Biehl</h1>
 	<p>Hi there, welcome to my personal website!</p>
@@ -41,8 +47,5 @@
 
 	<script src="js.js"></script>
 
-
-	<button onclick="partyMode()" id="colors">PARTY MODE!!!</button> 
-	<button onclick="undoPartyMode()" id="colors" class="bloop">undo party mode</button> 
 	<button onclick="killParty()" id="colors" class="kill">police</button> 
 </body>
