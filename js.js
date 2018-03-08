@@ -1,5 +1,5 @@
 /*
-Anand Biehl (c 2018)
+Anand Biehl 2018 CC0
 */
 
 var colors = 0;
@@ -155,6 +155,8 @@ function killParty(){
 
 	colors = !colors;
 	toggleColors();
+
+	party = 0;
 
 	on = 1;
 
