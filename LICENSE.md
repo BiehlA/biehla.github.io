@@ -1,2 +1,1 @@
-
-Copyright (C) 2018 
+Anand Biehl 2018 CC0
