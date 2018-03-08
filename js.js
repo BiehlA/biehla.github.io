@@ -130,6 +130,7 @@ function thePartyNeverStops(){
 	elem.style.color = getRandomColor();
 	elem.style.backgroundColor = getRandomColor();
 
+	elem.style.textShadow = "-4px 4px" + String(getRandomColor());
 
 	for (var i = 0; i < button.length; i++) {	
 		button[i].style.color = getRandomColor();
