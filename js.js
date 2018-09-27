@@ -2,7 +2,7 @@
 Anand Biehl 2018 CC0
 */
 
-var colors = 0;
+var colors = 1;
 var fontSize = 20;
 var size = 20;
 var party = 0;
@@ -115,7 +115,7 @@ function undoPartyMode(){
 
 function replay(){
 	clearInterval(interval);
-	interval = setInterval(thePartyNeverStops, 300);
+	interval = setInterval(thePartyNeverStops, 450);
 }
 
 function thePartyNeverStops(){
@@ -152,6 +152,8 @@ function killParty(){
 
 
 	elem.style.fontFamily = "";
+	elem.style.fontWeight= "";
+	elem.style.fontStyle= ""; 
 	elem.style.fontStyle = "";
 	elem.style.textShadow = "";
 
