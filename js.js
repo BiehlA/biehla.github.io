@@ -100,6 +100,11 @@ function undoPartyMode(){
 
 		colors = !colors;
 		toggleColors();
+		
+		backup = document.body.innerHTML;
+
+		document.body.innerHTML = document.body.innerHTML + "<br/><br/><br/><iframe width=\"200\" height=\"200\"src=\"https://youtube.com/embed/pwSsT8IU0WE?rel=0&autoplay=1&loop=1&controls=0&showinfo=0&playlist=pwSsT8IU0WE\" frameborder=\"0\" encrypted-media\" allowfullscreen></iframe>";
+
 
 		if (on == 1){
 			on = 0;
@@ -162,6 +167,8 @@ function killParty(){
 
 	name.innerHTML = "Anand Biehl";
 	names.innerHTML = "Anand Biehl";
+
+	document.body.innerHTML = backup;
 }
 
 function getRandomColor() {
