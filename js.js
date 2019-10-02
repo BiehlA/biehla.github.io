@@ -25,14 +25,14 @@ function toggleColors(){
 
 		colors = 0;
 	} else {
-		elem.style.color = "#F8F8F8";
-		elem.style.backgroundColor = "#343434";
+		elem.style.color = "#cbcbcb";
+		elem.style.backgroundColor = "#1d1d1d";
 
 		button[0].innerHTML = "Light Mode?";
 
 		for (var i = 0; i < button.length; i++) {
-			button[i].style.color = "#343434";
-			button[i].style.backgroundColor = "#F8F8F8";
+			button[i].style.color = "#1d1d1d";
+			button[i].style.backgroundColor = "#cbcbcb";
 		}
 
 		colors = 1;
