@@ -104,8 +104,7 @@ function undoPartyMode(){
 		backup = document.body.innerHTML;
 
 		//document.body.innerHTML = document.body.innerHTML + "<br/><br/><br/><iframe width=\"200\" height=\"200\"src=\"https://www.youtube.com/embed/axZemDfcfX8?rel=0&autoplay=1&loop=1&controls=0&showinfo=0&playlist=axZemDfcfX8\" frameborder=\"0\" encrypted-media\" allowfullscreen></iframe>";
-		document.body.innerHTML = document.body.innerHTML + "<br/><br/><br/><iframe width=\"200\" height=\"200\"src=\"https://youtube.com/embed/pwSsT8IU0WE?rel=0&autoplay=1&loop=1&controls=0&showinfo=0&playlist=pwSsT8IU0WE\" frameborder=\"0\" encrypted-media\" allowfullscreen></iframe>";
-
+		document.body.innerHTML = document.body.innerHTML + "<br/><br/><br/><iframe width=\"200\" height=\"200\"src=\"https://www.youtube.com/embed/auAfDfZY7zI?rel=0&autoplay=1&loop=1&controls=0&showinfo=0&playlist=auAfDfZY7zI\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
 		if (on == 1){
 			on = 0;
 			interval = setInterval(replay, 1000);
